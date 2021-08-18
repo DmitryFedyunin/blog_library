@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обо мне</title>
+</head>
+<body>
+    <h1>{{ welcome }}</h1>
+    <p>{% for val in values %}
+        {{ val }}
+        {% endfor %}
+    </p>
+
+    <p>
+        {% for car in obj %}
+            {{ car }}
+        {% endfor %}
+    {{ obj }}
+    </p>
+    <a href="{% url 'home' %}">Верунться назад</a>
+</body>
+</html>
