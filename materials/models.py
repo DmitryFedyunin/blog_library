@@ -9,6 +9,9 @@ class Materials(models.Model):
 
     def __str__(self):
         return self.title
+    #функция для созвращения на страницу после обновение записи
+    def get_absolute_url(self):
+        return f'/'
 
     class Meta:
         verbose_name = 'Материалы'
