@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .forms import MaterialsForm
 from .models import Materials
 from django.views.generic import DetailView, UpdateView, DeleteView
+
+
 def create(request):
     err = ''
     if request.method == 'POST':
