@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'materials/css/bootstrap.min.css' %}">
+    <title>Материалы</title>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="content">
+        {% include 'materials/base/header.html' %}
+        <div class="container">
+            <h1 class="my-md-5 my-4">Удалить категорию</h1>
+            <div class="row">
+                <div class="col-lg-5 col-md-8">
+                    <form method="post">
+                        {% csrf_token %}
+                        <button class="btn btn-danger" type="submit">Удалить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'materials/base/footer.html' %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+<script rel="script" src="{% static 'mainlistmaterials/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,12 +37,13 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <form>
+                    <form method="post">
                         <h3>Теги</h3>
                         <div class="input-group mb-3">
-                            <select class="form-select" id="selectAddTag" aria-label="Добавьте автора">
-                                <option selected>Тег1</option>
-                                <option value="1">Тег2</option>
+                            {{ tags.title }}
+                            <select class="form-select" id="id_tags" aria-label="Добавьте автора" name="title">
+                                <option selected>1</option>
+                                <option value=""></option>
                                 <option value="2">Тег3</option>
                                 <option value="3">Тег4</option>
                             </select>

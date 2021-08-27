@@ -1,17 +1,16 @@
 from django.forms import ModelForm, TextInput
-from tagslist.models import Tags
+from categorylist.models import Category
 
 
-class TagsForm(ModelForm):
+class CategoryForm(ModelForm):
     class Meta:
-        model = Tags
+        model = Category
         fields = ['title']
 
-        widgets ={
+        widgets = {
             'title': TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Напишите название',
                 'id': 'floatingName'
             })
         }
-

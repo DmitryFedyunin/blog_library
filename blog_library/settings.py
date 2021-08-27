@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'mainlistmaterials',
     'materials',
     'tagslist',
+    'categorylist',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

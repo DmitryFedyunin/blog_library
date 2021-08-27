@@ -4,6 +4,8 @@ from .models import Materials
 from django.views.generic import DetailView, UpdateView, DeleteView
 
 
+
+
 def create(request):
     err = ''
     if request.method == 'POST':
